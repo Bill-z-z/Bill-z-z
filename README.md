@@ -1,115 +1,106 @@
-<img width="1856" height="576" alt="Tianyang (Bill) Zhang - Full-Stack Software Engineer" src="https://github.com/user-attachments/assets/99485bc8-6215-4f57-b256-f5ac47eeb611" />
+<img width="1856" height="576" alt="Tianyang (Bill) Zhang - Data Science and Data Engineering" src="https://github.com/user-attachments/assets/efbe0674-0f34-4189-bf0d-f109c7113e40" />
 
 
-### Full-Stack Software Engineer — AWS & Cloud Infrastructure | Java · Python · React | B.S. Business Analytics, University of Rochester
+### Data Scientist & Data Engineer — M.S. Applied Data Science, University of Chicago | Ex-Data Scientist Intern at Thermo Fisher Scientific, InnovaAI and MinMetals Futures
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-tianyang--zhang3-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tianyang-zhang3/)
-![University of Rochester](https://img.shields.io/badge/B.S.%20Business%20Analytics-University%20of%20Rochester-003B71?style=for-the-badge)
-![Location](https://img.shields.io/badge/Rochester%2C%20NY%20%C2%B7%20NYC%20Metro-424242?style=for-the-badge&logo=googlemaps&logoColor=white)
-![Open to work](https://img.shields.io/badge/Open%20to%20SWE%20roles-2EA043?style=for-the-badge)
+![UChicago](https://img.shields.io/badge/M.S.%20Applied%20Data%20Science-University%20of%20Chicago-800000?style=for-the-badge)
+![Location](https://img.shields.io/badge/Chicago%2C%20IL-424242?style=for-the-badge&logo=googlemaps&logoColor=white)
+![Open to](https://img.shields.io/badge/Open%20to%20Summer%202027%20internships-2EA043?style=for-the-badge)
 
-I build the whole request path — the React screen a user taps, the API behind it, the cache in front of the database, and the cloud infrastructure that keeps it all up when traffic spikes.
+I build models that people make decisions with, and the data platforms underneath them: demand forecasts that drive replenishment, churn models that shape retention, and experiments that decide what ships.
 
-**At InnovaAI Tech in San Francisco**, I architected a serverless Java API on AWS Lambda, designed the caching layer that cut read latency by 80%, and helped scale the platform to 10k+ daily active users while cutting cloud costs by 30%. **At Minmetals Futures in Shanghai**, I built the Python/Flask backend for a real-time stock analytics platform serving 1M+ requests a day. Outside of work, I train and ship generative and computer-vision models in PyTorch — diffusion, DiT, VAEs, ViT and ConvNeXt — and publish them here. I hold a **B.S. in Business Analytics from the University of Rochester** and studied Logistics & Supply Chain Management at Rutgers.
+**Three data science internships so far.** At **Thermo Fisher Scientific** I built SKU-level demand forecasting models for pharmaceutical products and analyzed pricing and portfolio performance for Sanofi's medicines and vaccines. At **InnovaAI Tech** in San Francisco I built a churn prediction pipeline and a customer segmentation framework whose insights contributed to a 15% reduction in churn. At **MinMetals Futures** I forecast commodity futures prices with backtesting that prevents look-ahead bias. I'm now in the **University of Chicago's M.S. in Applied Data Science**, building cloud data platforms on GCP, Snowflake and Databricks.
 
 ---
 
 ## Value delivered
 
-**10k+ daily active users, 30% lower cloud costs** — scaled the InnovaAI platform with AWS auto-scaling and Elastic Load Balancing, so capacity followed demand instead of being paid for up front.
+**15% lower churn, 15% higher conversion.** Turned an end-to-end churn model (85% accuracy identifying at-risk customers) and a K-Means + PCA segmentation into targeted retention strategies at InnovaAI Tech.
 
-**Read latency cut from 250 ms to 50 ms** — designed a multi-layer caching system on Redis Cluster with Lua scripting for the comment service, the hottest read path in the product.
+**+12% signup conversion.** Designed A/B tests across 120K+ sessions with power analysis and SRM checks; the winning CTA variant lifted signups 12%, and segmenting by device showed mobile users converting 2.5x higher on shorter forms.
 
-**5k requests per minute on a serverless API** — architected a Java REST API on AWS Lambda with WebSocket push for real-time notifications inside a 20 ms SLA.
+**40% faster experiment decisions.** Built an automated Python/SQL pipeline combining Frequentist and Bayesian inference, plus a self-serve Tableau go/no-go dashboard.
 
-**50+ zero-downtime deployments a day** — automated CI/CD on AWS ECS Fargate so every merge could ship safely.
+**SKU-level demand forecasts → replenishment.** Forecasting models with seasonality and promotions at Thermo Fisher, turned into replenishment recommendations and dashboards for supply chain teams.
 
-**40% faster page loads, Lighthouse 95+** — built a responsive React / Next.js front end with WebAssembly for the compute-heavy parts.
+**Leak-free market forecasting.** Time-aware backtesting comparing ARIMA, regression, Random Forest and gradient boosting across market regimes at MinMetals Futures.
 
-**1M+ daily requests, 60% faster data fetches** — built the Python/Flask REST backend for Minmetals Futures' real-time stock analytics platform, with Redis caching and MySQL query tuning in front of the Yahoo Finance feed.
-
-**25% higher user engagement** — designed a content-based recommendation engine that personalized the stocks each Minmetals user saw.
+**ViT accuracy 83.15% → 87.95%.** Diffusion-generated (DiT-XL/2) training images for wildlife monitoring, in a Carnegie Mellon research program with Prof. David Woodruff.
 
 ---
 
 ## How I work
 
-| Backend & cloud | Front end & ML |
+| Data science | Data engineering |
 | --- | --- |
-| Serverless and containerized services on AWS — Lambda, ECS Fargate, ELB, auto-scaling | React / Next.js interfaces tuned for Lighthouse scores, not just looks |
-| Design for latency first: Redis Cluster, Lua scripting, query optimization | WebAssembly where JavaScript isn't fast enough |
-| Real-time systems with WebSockets and event streaming (Kafka) | PyTorch generative models: diffusion, DiT, VAE, autoencoders |
-| CI/CD that makes shipping boring: dozens of deploys a day, zero downtime | Vision models for image retrieval and selection: ViT, ConvNeXt, EfficientNet |
-| TLS everywhere and security built into the data path | Business-analytics training: I measure engagement, latency and cost, then report the numbers |
+| Forecasting with seasonality, promotions and lagged signals | Cloud SQL (MySQL 8.0) on GCP, loaded and queried from Python |
+| Classification, segmentation (K-Means, PCA), A/B testing, Bayesian inference | Snowflake: hand-written DDL, row-count reconciliation, star schemas |
+| Time-aware validation: no look-ahead bias, no leakage | Type 2 slowly changing dimensions loaded idempotently with MERGE |
+| Results people act on: replenishment plans, retention strategy, go/no-go | MCP server + Streamlit so non-SQL users can ask the warehouse questions |
 
 ---
 
 ## Stack
 
-**Languages**
+**Languages & ML**
 
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
+![R](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
+![XGBoost](https://img.shields.io/badge/XGBoost-1B3A5C?style=for-the-badge)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
 
-**Cloud & Infrastructure**
+**Data platforms & cloud**
 
+![Snowflake](https://img.shields.io/badge/Snowflake-29B5E8?style=for-the-badge&logo=snowflake&logoColor=white)
+![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=for-the-badge&logo=databricks&logoColor=white)
+![GCP](https://img.shields.io/badge/Google%20Cloud-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white)
-![Lambda](https://img.shields.io/badge/AWS%20Lambda-FF9900?style=for-the-badge&logo=awslambda&logoColor=white)
-![ECS Fargate](https://img.shields.io/badge/ECS%20Fargate-FF9900?style=for-the-badge&logo=amazonecs&logoColor=white)
-![CI/CD](https://img.shields.io/badge/CI%2FCD-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
-
-**Backend & Data**
-
-![Jakarta EE](https://img.shields.io/badge/Jakarta%20EE-F7A80D?style=for-the-badge&logo=jakartaee&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+![Spark](https://img.shields.io/badge/Apache%20Spark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white)
 ![Kafka](https://img.shields.io/badge/Apache%20Kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
-**Front end**
+**Analytics & apps**
 
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![WebAssembly](https://img.shields.io/badge/WebAssembly-654FF0?style=for-the-badge&logo=webassembly&logoColor=white)
-
-**Machine Learning**
-
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
-![Diffusion Models](https://img.shields.io/badge/Diffusion%20%26%20DiT-1B3A5C?style=for-the-badge)
-![Computer Vision](https://img.shields.io/badge/ViT%20%C2%B7%20ConvNeXt%20%C2%B7%20EfficientNet-1B3A5C?style=for-the-badge)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
 ---
 
 ## Selected work
 
-**Real-time social platform — InnovaAI Tech (2024)** — serverless Java API on AWS Lambda at 5k RPM, WebSocket notifications inside a 20 ms SLA, Redis Cluster caching that took comment reads from 250 ms to 50 ms, and auto-scaling to 10k+ DAU at 30% lower cost.
+**Cloud data warehouse: GCP Cloud SQL → Snowflake (UChicago, 2026)**: stood up MySQL 8.0 on Cloud SQL, migrated the 16-table Sakila schema to Snowflake, remodeled it into a star schema with Type 2 SCDs, and am building an MCP server and Streamlit app that answer plain-English questions over it.
 
-**Real-time stock analytics platform — Minmetals Futures (2023)** — Python/Flask REST backend serving 1M+ daily requests, a content-based recommendation engine that lifted engagement 25%, and Redis + MySQL tuning that cut data-fetch latency 60%.
+**National Park demand signals lakehouse (UChicago team of 4, in progress)**: tests whether Recreation.gov reservations (9.78M FY2024 bookings) and GDELT news coverage (~9 TB) anticipate visits to five national parks. I own the Snowflake star schema, the dashboard and the held-out evaluation.
 
-**[bee-diffusion-zy](https://github.com/Bill-z-z/bee-diffusion-zy)** — a diffusion model trained on a bee image dataset.
+**Experimentation & conversion optimization platform**: A/B testing, Bayesian and Frequentist inference, FDR-corrected segmentation and a self-serve Tableau dashboard.
 
-**[DIT_XL-2_my-path-ty](https://github.com/Bill-z-z/DIT_XL-2_my-path-ty)** — generates diverse image variations with pre-trained Diffusion Transformer (DiT-XL/2) and VAE models.
+**[bee-diffusion-zy](https://github.com/Bill-z-z/bee-diffusion-zy)** · **[DIT_XL-2_my-path-ty](https://github.com/Bill-z-z/DIT_XL-2_my-path-ty)**: diffusion-model and Diffusion Transformer (DiT-XL/2) image generation projects in PyTorch.
 
-**[vae-project-yz](https://github.com/Bill-z-z/vae-project-yz)** · **[ae-project-ty](https://github.com/Bill-z-z/ae-project-ty)** · **[vae-augmentation-yz](https://github.com/Bill-z-z/vae-augmentation-yz)** — VAE and autoencoder image generation and processing in PyTorch, plus a torchvision augmentation pipeline.
+**[vit-selector_zh](https://github.com/Bill-z-z/vit-selector_zh)** · **[convnext-selector-win-zh](https://github.com/Bill-z-z/convnext-selector-win-zh)** · **[efficientnet_ty](https://github.com/Bill-z-z/efficientnet_ty)**: image selection and classification with ViT, ConvNeXt and EfficientNet.
 
-**[vit-selector_zh](https://github.com/Bill-z-z/vit-selector_zh)** · **[convnext-selector-win-zh](https://github.com/Bill-z-z/convnext-selector-win-zh)** · **[efficientnet_ty](https://github.com/Bill-z-z/efficientnet_ty)** — image selection and classification with Vision Transformer, ConvNeXt and EfficientNet embeddings and cosine similarity.
+---
+
+## Research
+
+**Carnegie Mellon University, Research Program on Algorithms for Big Data** (PI: Prof. David Woodruff): *Data Complement: Utilizing Realistic Wildlife Images Generated by Different Models as Training Data to Enhance the Performance of ViT and ConvNeXt Models for Wildlife Monitoring.*
+
+**Washington University in St. Louis, Research Program on Institutional Framework for Markets** (PI: Prof. John N. Drobak): *Research on Monopoly's Variable Effect on Digital Market in China — Take Xiaomi as an Example*, 2021 International Conference on Economic Management and Cultural Industry.
 
 ---
 
 ## Education
 
-**B.S., Business Analytics — University of Rochester** (2022 – 2025)
+**M.S., Applied Data Science, University of Chicago** (Sep 2026 – Dec 2027, expected)
 
-**Logistics, Materials & Supply Chain Management — Rutgers University–New Brunswick** (2019 – 2022) · Rutgers Business School Entrepreneur Living and Learning Program
+**B.S., Business Analytics; B.A., Econometrics and Quantitative Economics, University of Rochester** (2022 – 2025)
 
 ---
 
-## Track record
-
-**InnovaAI Tech LLC** — Software Engineer Intern, San Francisco (2024) · **Minmetals Futures** — Software Engineer Intern, Shanghai (2023) · **University of Rochester** · **Rutgers Business School**
-
-Open to full-time software engineering roles — on-site, hybrid or remote, with the New York City metro area as home base. The fastest way to reach me is [LinkedIn](https://www.linkedin.com/in/tianyang-zhang3/).
+Open to **Summer 2027 data science, data engineering and product analytics internships**, and full-time roles from January 2028. The fastest way to reach me is [LinkedIn](https://www.linkedin.com/in/tianyang-zhang3/).
